@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffd6d6;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #07a4ff;
+    border-radius: 50px;
+}
+
+.textt{
+    text-decoration: none;
+}
+
+
+header {
+    background: linear-gradient(to right, #07a4ff, #5900ff);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+input {
+    caret-color: #006eff;
+}
+
+
+input:hover {
+    background-color: #f5f5f5;
+}
+
+
+.link {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 7px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #ababab 50%, #a9a9a9 100%);
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+nav,
+article {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    min-width: 10%;
+    background-color: #ededed;
+}
+
+article {
+    flex-grow: 20;
+    max-width: 80%;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    height: 80px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid #3c67e3;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 7px #0101d8;
+    background-image: linear-gradient(90deg, #84adf4 50%, #527bff 100%);
+}
+
+.button:hover {
+    animation: pulsate 0.3s;
+    top: 2px;
+    position: relative;
+    box-shadow: 0 4.5px #0101d8;
+}
+
+.button:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 50px #5ddcff, 0 0 75px #4e00c2;
+    }
+}
+
+
+tr th {
+    background: #eeeeee;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+th, td{
+    padding: 5px 10px;
+}
+
+
+
+
+.box {
+    font-size: 15px;
+    display: block;
+    padding: 7px 13px;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    display: block;
+    color: #000000;
+}
+
+.box2 {
+    font-size: 15px;
+    display: block;
+    padding: 7px 13px;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    display: block;
+    color: #000000;
+}
+
+.box3 {
+    font-size: 15px;
+    display: block;
+    padding: 7px 13px;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    display: block;
+    color: #000000;
+}
+
+.box4 {
+    font-size: 15px;
+    display: block;
+    padding: 7px 13px;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    display: block;
+    color: #000000;
+
+}
+
+.box5 {
+    font-size: 15px;
+    padding: 3px 10px;
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    color: #000000;
+    text-align: center;
+}
+
+.box6 {
+    font-size: 15px;
+    padding: 3px 10px;
+    background-color: rgb(255, 255, 255);
+    width: 39%;
+    display: block;
+    color: #000000;
+
+}
+.box8 {
+    font-size: 12px;
+    padding: 3px 5px;
+    background-color: rgb(255, 255, 255);
+
+    color: #000000;
+
+}
+
+select {
+    border-radius: 7px;
+}
+
+select:hover {
+    background-color: #f5f5f5;
+}
+
+.link2 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 15px;
+    background-color: #26e200;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.link3 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 15px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+.link2:hover {
+    background-color: #03a600;
+}
+
+.link3:hover {
+    background-color: #ff5151;
+}
+
+.button2 {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    outline: 2px solid #fff;
+    padding: 30px 60px;
+    position: relative;
+    overflow: hidden;
+    transform: color 1s;
+}
+
+.button2:hover {
+    color: #006eff;
+}
+
+.button2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    left: -50px;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+
+.button2:hover::before {
+    width: 150%;
+}
+
+.submit {
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+    background-image: linear-gradient(90deg, #5f9aff 50%, #2356fe 100%);
+    padding: 10px 40px;
+    color: #ffffff;
+    border-radius: 5px; 
+    font-weight: 600;
+    border: 1px solid #3c67e3;
+}
+
+.submit:hover {
+    background-image: linear-gradient(90deg, #55c3ff 50%, #34a0ff 100%);
+}
+
+textarea {
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    color: #000000;
+}
+
+textarea:hover {
+    background-color: #f5f5f5;
+}
+
+.filter {
+    display: inline-block;
+    text-decoration: none;
+    padding: 3.5px 20px;
+    border: 2px solid #07a4ff;
+    border-radius: 4px;
+    font-weight: normal;
+    color: #fff;
+    background-image: linear-gradient(90deg, #5f9aff 50%, #0e46fe 100%);
+}
+
+.filter:hover {
+    background-image: linear-gradient(90deg, #55c3ff 50%, #34a0ff 100%);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    margin-left: 13em;
+    background-color: rgb(255, 248, 248);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 35em;
+    padding: 15px;
+    width: 44%;
+    margin-left: 13em;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: box-shadow .25s ease-in;
+}
+
+.card2:hover {
+    box-shadow: rgb(226, 5, 255)5px 3px,
+        rgb(0, 255, 234)10px 6px,
+        rgb(212, 255, 0)15px 9px;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+form .submit {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.saya {
+    width: 11em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+table.tengah {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    color: #fff;
+    font-weight:lighter;
+}
+
+.sosmed{
+    text-decoration: none;
+    color:#b7b7b7;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    left:34%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28,28,28);
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.4s;
+}
+
+.sosmed:hover{
+    transform: rotate(45deg);
+}
+.sosmed::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #373737;
+    border-radius: 10px;
+    transition: opacity 0.2s;
+}
+
+.sosmed:hover::before{
+    opacity: 0.4s;
+}
+
+.sosmed:nth-child(1)::before{
+    background: #c32aa3;
+}
+.sosmed:nth-child(2)::before{
+    background: #465eff;
+}
+
+.sosmed:hover::before{
+    transform: translate(-4x, -4x); filter: blur(20px);
+}
+
+.sosmed i {
+    font-size: 1.7em;
+    transition: all 0.4s;
+}
+
+.sosmed:hover i {
+    color:#c8c8c8;
+    transform: rotate(-45deg);
+}
+
+.sosmed:hover i.instagram{
+    color:#c32aa3;
+}
+
+.sosmed:hover i.facebook{
+    color:#465eff;
+}
+
